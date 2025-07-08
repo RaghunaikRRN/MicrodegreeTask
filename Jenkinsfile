@@ -26,11 +26,10 @@ pipeline {
                 sh 'free -h'
             }
         }
-         stage('check jenkins status') {
+        stage('Check Jenkins Status') {
             steps {
-                sh 'sudo systemctl status jenkis'
-            }
-        }
-               
+                sh 'sudo systemctl status jenkins'
+            }
+        }
     }
 }
