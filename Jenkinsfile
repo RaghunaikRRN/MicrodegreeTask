@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Check Jenkins Status') {
             steps {
-                sh 'sudo -s systemctl status jenkins'
+                sh 'systemctl status jenkins'
             }
         }
     }
