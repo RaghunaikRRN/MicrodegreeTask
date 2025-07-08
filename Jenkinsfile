@@ -26,9 +26,9 @@ pipeline {
                 sh 'free -h'
             }
         }
-        stage('Check Jenkins Status') {
+        stage('java version') {
             steps {
-                sh 'systemctl status jenkins'
+                sh 'java --version'
             }
         }
     }
